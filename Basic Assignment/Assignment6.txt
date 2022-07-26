@@ -1,0 +1,37 @@
+1. What are escape characters, and how do you use them?
+Answer: Escape characters are those values which cannot be directly written inside a string. It can be used by writing them after a backward slash (\).
+
+2. What do the escape characters n and t stand for?
+Answer: \n enter a new line, while \t give a tab space between the written string.
+
+3. What is the way to include backslash characters in a string?
+Answer: A backslash character can be included by putting after another backward slash. Like \\.
+
+4. The string "Howl's Moving Castle" is a correct value. Why isn't the single quote character in the
+word Howl's not escaped a problem?
+Answer: Because it is written inside a double quotation marks.
+
+5. How do you write a string of newlines if you don't want to use the n character?
+Answer: It can be done using the escape character \r. It returns the value exactly after its values in a next line.
+
+6. What are the values of the given expressions?
+'Hello, world!'[1] = 'H'
+'Hello, world!'[0:5] = 'Hello'
+'Hello, world!'[:5] = 'Hello'
+'Hello, world!'[3:] = 'lo, world!'
+
+7. What are the values of the following expressions?
+'Hello'.upper() = 'HELLO'
+'Hello'.upper().isupper() = True
+'Hello'.upper().lower() = 'hello'
+
+8. What are the values of the following expressions?
+'Remember, remember, the fifth of July.'.split() = ['Remember,', 'remember,', 'the', 'fifth', 'of', 'July.']
+'-'.join('There can only one.'.split()) = There-can-only-one.
+
+9. What are the methods for right-justifying, left-justifying, and centering a string?
+Answer: rjust() for right-justifying, ljust() for left-justifying and center() for centering a string.
+
+10. What is the best way to remove whitespace characters from the start or end?
+Answer: strip() is an inbuilt python method to remove teh whitespace from the start and end of the string.
+If an argument is passed inside it, then it will remove that specified argument from the left and right of the string.
