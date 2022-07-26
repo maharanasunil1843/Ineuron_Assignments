@@ -1,0 +1,65 @@
+1. What exactly is []?
+Answer: [] is a log bracket used to form a list. It can contain various datatypes inside it.
+
+2. In a list of values stored in a variable called spam, how would you assign the value "hello"; as the
+third value? (Assume [2, 4, 6, 8, 10] are in spam.)
+Answer: As list is mutable, we can assign values using the index number of the desired place.
+In this case, we can assign "hello" to the list variable spam by writing following command:
+spam[2] = "hello".
+
+Let's pretend the spam includes the list ['a', 'b', 'c', 'd'] for the next three queries
+3. What is the value of spam[int(int('3' * 2) / 11)]?
+Answer: ['c']
+
+4. What is the value of spam[-1]?
+Answer: 'd'
+
+5. What is the value of spam[:2]?
+Answer: ['a', 'b']
+
+Let's pretend bacon has the list [3.14, 'cat', 11, 'cat', True] for the next three questions.
+6. What is the value of bacon.index('cat')?
+Answer: 1
+
+7. How does bacon.append(99) change the look of the list value in bacon?
+Answer: append is a builtin method of list class which attached the given value at the end of the list dataset.
+Hence, the final outcome of the above code will be: [3.14, 'cat', 11, 'cat', True, 99]
+
+8. How does bacon.remove('cat') change the look of the list in bacon?
+Answer: remove is a builtin method of list class which removes the dataset specified in its argument while calling.
+It removes the identical dataset at its first occurrence.
+Hence, the outcome of the above code will be:  [3.14, 11, 'cat', True, 99]
+
+9. What are the list concatenation and list replication operators?
+Answer: + is the list concatenation operator while * is the list replication oeprators.
+
+10. What is difference between the list methods append() and insert()?
+Answer: append() method take only 1 argument as a dataset and adds the given dataset inside it at the end of the list.
+insert() method takes 2 argument. first is the index before which the data need to place and second is the value of the dataset that needs to be inserted.
+
+11. What are the two methods for removing items from a list?
+Answer: Two methods for removing the dataset from a list is pop() and remove().
+The only difference between them is the argument given to them. pop() take the argument in index number while remove() takes the argument in form of value of the dataset.
+
+12. Describe how list values and string values are identical.
+Answer: list and string values are identical on terms of their iterability. Both the values are iterable.
+However, list is mutable but string is immutable. While list can contain all type of data, string can only contain string dataset.
+
+13. What's the difference between tuples and lists?
+Answer: List are written inside [] while tuples are written inside ().
+Lists are mutable while tuples are immutable.
+
+14. How do you type a tuple value that only contains the integer 42?
+Answer: (42)
+
+15. How do you get a list value's tuple form? How do you get a tuple value's list form?
+Answer: list[tuple(values)] converts the values inside the tuples to values inside a list.
+tuple(list[values]) converts the values inside the list into a tuple.
+
+16. Variables that contain list values are not necessarily lists themselves. Instead, what do they
+contain?
+Answer: Variables that contain list values need not be lists only. They can be tuples, dictionaries or sets
+
+17. How do you distinguish between copy.copy() and copy.deepcopy()?
+Answer: copy.copy() creates the copy of the objects reference, i.e., the address of the object reference name is different but the address of the objects remain same.
+However, copy.deepcopy() creates a new object reference along with the new references for the objects also.
