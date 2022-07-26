@@ -1,0 +1,30 @@
+1. What does an empty dictionary;s code look like?
+Answer: Let s be the empty dictionary then it can be written as s = {}.
+
+2. What is the value of a dictionary value with the key 'foo' and the value 42?
+Answer: 42.
+
+3. What is the most significant distinction between a dictionary and a list?
+Answer: List contains dataset in form of single arguments only, while dictionary contains dataset in form of key and value pairs.
+
+4. What happens if you try to access spam['foo'] if spam is {'bar': 100}?
+Answer: It will give an name error as 'foo' is not defined inside the spam.
+
+5. If a dictionary is stored in spam, what is the difference between the expressions 'cat' in spam and
+'cat' in spam.keys()?
+Answer: 'cat' in spam refers to the key while 'cat' in spam.keys() refers to the value of dataset.
+
+6. If a dictionary is stored in spam, what is the difference between the expressions 'cat' in spam and
+'cat' in spam.values()?
+Answer: 'cat' in spam refers to the key while 'cat' in spam.values() will be referred as the reference object for the value linked with the 'cat' variable.
+
+7. What is a shortcut for the following code?
+if 'color' not in spam:
+spam['color'] = 'black'
+Answer: Only second line of the code is more than enough to execute the code. Hence, spam['color'] = 'black' will do the work.
+
+8. How do you 'pretty print' dictionary values using which module and function?
+Answer: There are few modules to pretty print a dictionary out of which some are mentioend below:
+1) pprint module with pprint() method. It can pretty print a dictionary and auto sorts the on the basis of keys. But it can't pretty print the nested dictionaries.
+2) json module with dumps() method. It can pretty print a dictionary and its nested elements.
+3) yaml module with dump() method. It can pretty print a dictionary and its nested elements.
